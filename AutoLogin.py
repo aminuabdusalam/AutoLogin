@@ -1,11 +1,9 @@
 from tkinter import *
+from login_details import auto_login_details
+
 def auto_login():
 	"""Build an auto login page using GUI"""
-	def auto_login_details():
-		"""Sets the user's login details"""
-		username.set("aminuabdusalam")
-		password.set("autologin")
-
+	
 	screen = Tk()
 	screen.title("User Login Page")
 	screen.geometry("300x250")
@@ -26,7 +24,7 @@ def auto_login():
 	Entry(screen, textvariable = password,show="*").pack()
 	Label(screen, text = "").pack()
 	
-	#Creatinf button to call auto_login_details function.
+	#Creating button to call auto_login_details function.
 	Button(screen, text = "Auto fill username and password",command = auto_login_details).pack()
 	
 	
