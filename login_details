@@ -1,0 +1,4 @@
+def auto_login_details():
+		"""Sets the user's login details"""
+		username.set("aminuabdusalam")
+		password.set("autologin")
